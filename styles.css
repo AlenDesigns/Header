@@ -10,10 +10,6 @@ TABLET & SMALLER LAPTOPS
 ~768px+
 */
 /*
-DESKTOP
-~1030px+
-*/
-/*
 LARGE VIEWING SIZE
 ~1240px+
 */
@@ -21,9 +17,47 @@ LARGE VIEWING SIZE
   height: 8px;
   background: #53bbed;
 }
-#header #notification-bar .menu-items,
-#header #notification-bar .faq-widget-wrapper {
+@media only screen and (min-width: 1300px) {
+  #header #notification-bar .notification-bar-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+#header #notification-bar .notification-bar-inner .menu-items,
+#header #notification-bar .notification-bar-inner .faq-widget-wrapper {
   display: none;
+}
+@media only screen and (min-width: 1300px) {
+  #header #notification-bar .notification-bar-inner .menu-items,
+  #header #notification-bar .notification-bar-inner .faq-widget-wrapper {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  #header #notification-bar .notification-bar-inner .menu-items .items {
+    padding: 0;
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  #header #notification-bar .notification-bar-inner .menu-items .items .item {
+    display: inline-block;
+    padding: 12px 20px;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  #header #notification-bar .notification-bar-inner .menu-items .items .item .item-link {
+    text-decoration: none;
+    color: white;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  #header #notification-bar {
+    height: auto;
+  }
 }
 #header #site-header {
   display: flex;

@@ -22,13 +22,6 @@ TABLET & SMALLER LAPTOPS
     @media only screen and (min-width: 769px) { @rules(); }
 }
 
-/*
-DESKTOP
-~1030px+
-*/
-.desktop(@rules) {
-    @media only screen and (min-width: 1030px) { @rules(); }
-}
 
 /*
 LARGE VIEWING SIZE
@@ -37,26 +30,61 @@ LARGE VIEWING SIZE
 .large-screen(@rules) {
     @media only screen and (min-width: 1300px) { @rules(); }
 }
+@desktop:   ~"only screen and (min-width: 1300px)";
 
 // Header
 #header {
     #notification-bar {
         height: 8px;
         background: #53bbed;
-        .menu-items,
-        .faq-widget-wrapper {
-            display: none;
+        .notification-bar-inner {
+            @media @desktop {
+                max-width: 1180px;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+            .menu-items,
+            .faq-widget-wrapper {
+                display: none;
+                @media @desktop {
+                    display: block;
+                }
+            }
+            .menu-items {
+                .items {
+                    @media @desktop {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    .item {
+                        @media @desktop {
+                            display: inline-block;
+                            padding: 12px 20px;
+                        }
+                        .item-link {
+                            @media @desktop {
+                                text-decoration: none;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media @desktop {
+            height: auto;
         }
     }
     #site-header {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-
-        .large-screen ({
+        @media @desktop {
             max-width: 1200px;
             margin: 0 auto;
-        });
+        }
         .toggle-wrapper {
             text-align: left;
             .toggle {
