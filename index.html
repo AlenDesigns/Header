@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Commercial Washroom</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header id="header">
+        <!-- Top bar -->
+        <div id="notification-bar">
+            <div class="menu-items">
+                <ul class="items">
+                    <li class="item"><a href="#" class="item-link">Blog</a></li>
+                    <li class="item"><a href="#" class="item-link">Contact</a></li>
+                    <li class="item"><a href="#" class="item-link">FAQ's</a></li>
+                </ul>
+            </div>
+            <div class="faq-widget-wrapper">
+                <div class="faq-widget">
+                    <span class="widget-text">Ask us for full quote</span>
+                </div>
+            </div>
+        </div>
+        <!-- Main navigation sections -->
+        <div id="site-header">
+            <div class="toggle-wrapper">
+                <svg class="toggle" xmlns="http://www.w3.org/2000/svg" width="49" height="25" viewBox="0 0 49 25">
+                    <defs>
+                        <style>
+                        .cls-1 {
+                            fill: #333;
+                            fill-rule: evenodd;
+                        }
+                        </style>
+                    </defs>
+                    <path id="menu_" data-name="menu]" class="cls-1" d="M30,66H79v3H30V66Zm0,22H79v3H30V88Z" transform="translate(-30 -66)"/>
+                </svg>      
+            </div>
+            <div class="logo-wrapper">
+                <img src="assets/logo.png" alt="Logo" class="logo" />
+            </div>
+            <div class="search-wrapper">
+                <div class="search-block">
+                    <input type="text" class="search-text" />
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+            <div class="links-wrapper">
+                <!-- User icon -->
+                <svg class="user-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="27" viewBox="0 0 27 27">
+                    <image id="account_icon" data-name="account icon" width="27" height="27" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAACTklEQVRIibWVPWhTURiGnybRQa21UAuNFILiWCgGB3VSWsShiktB8GdycBJEpINRkQYk6FJRoR06tOCg+FdwqR21g4JV7CoFcVOkgtSfiPLhe/Hce25OktI8y/353u99c84956StWCzSIEeA08BeoBP4ArwAJoDHjVg0ErYZmAaGvMp/ZoDjwFev4pDx3sTJAQ8V9AOoALuArbpW9H5Iupzn4BAsAmeAA8A3YBCYd2qfgNfAI2BWOtPf9FxEvZGd0/VCIshlXnVXn0oobCdQAL4Dk141zqR0BfWlEgrr0XUJWPGqcVakc/s8QmG/de3wKul0JPo8QmHvgKp+aZ9XjdMnXVV9qYTClrV/jBtA1lP8I6s60i97ChEKM0rATy37e0BXot6l94PSlTwHh3r7bBE4CUwBR4GDwDPgA9ALDAAbgF/SLXoOTYQZ94EdQFnGhz0FXJEuSGgaNwEjGkXZq8YpSzeivlRqHcR21t0BtunZTvgnOi3e6/jaCGwH9mi0ndJ+1LE1kzRNhrUBF4Grel7SFN3VAqjFeuCYtAVpLgGjwJ+oJ5vP593+isKM2/oPexXaqMLqb4BxjXA3sF/feDYt7ARwXfdngcvapM1g+qea9kPAPk37W5wFYrv/lu6vAWNNhiQZkw/y7XHD7Bu1Awv1NmYTlOTXHq0BC+sGTsnj/CqmrhZV+SH/bgsbBtZp98/VaFwtc/I1/+GMjhzjwRoHRUS+AxbWr4fnnmxtiHz7czpQjc/AlhaEma/Ra2HRinzZopFFZCzIlmfrgYW/A7B0GZs9RvUAAAAASUVORK5CYII="/>
+                </svg>                  
+                <!-- Cart icon -->
+                <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="25" viewBox="0 0 28 25">
+                    <image id="basket_icon" data-name="basket icon" width="28" height="25" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAZCAYAAAAiwE4nAAACHklEQVRIib3WO2hVQRAG4C9BfFRJ5aNQbNTCoNGoEZQEsVIbEUQFEUQLsbET7SNRrC0VKwXxWVnYxM6b4DtYiI0iRDFYCGrAJ5vM0ZOzNyQxN/5wOOzsv/Pv7M7OblNHR4cpYAsu4BCeVeiHcRzb8WkyV82ZJcdS3MRa7Kz0zsFRbMCVqfibjLAAt7EQ13Cu0v8de/AWu3Am8zBNwYtYjyexdL8yBu+xGyM4hf0ZY4qCJ3EAH8Lhl4zxFw9xJFqXYpJ1MZHgDvTiG/bidcbIkfbwfGzDLSzKGBMIrsLV6DuB+xljYpzGXSzDdcytMlOWrcaKku0sWvAUQ7Gc00FKrm3YGjlwozT2ZTqHXzF/mk7/FSMpwndYHjMbmiWhxdiXMjoJ1kIwrf3ljNoYHAzB/pQYA+Fy0yyJJWyO/0ASfBCNjRmtcSh815LgY/xAO+bVkehBX/QX6IuvQHu0e7LRY0cj9f9MBaI5KshgHJF1GZ02dKO1ZOuOr0BrtNuy0WNFP4m+wOfi4NdmcVmL3BjVKASLxOnM6DNHZ1njf0bYXxYcXV+srOzVTNESPtPV9VwkisjSdMV0RZT3SkJF9MMl253KRIbDVqvYU3RNeBSX9R/BIuSuIJUFe+tEWS3og3VsSlvUXxjK11NhbGTFGbd/VcFahdRIweIUjFvSN/E+SZU93YX13i/TQdq7JfiIV/UEE9LT4BjWNDDK9OobA34DMf1m/0XARZcAAAAASUVORK5CYII="/>
+                </svg>                  
+                <!-- Phone number -->
+                <span class="telephone">01202 650900</span>
+            </div>
+            <div class="sections-wrapper">
+                <div class="menu-items">
+                    <ul class="items">
+                        <li class="item"><a href="#" class="item-link">cubicles</a></li>
+                        <li class="item"><a href="#" class="item-link">cubicles</a></li>
+                        <li class="item"><a href="#" class="item-link">cubicles</a></li>
+                        <li class="item"><a href="#" class="item-link">cubicles</a></li>
+                        <li class="item"><a href="#" class="item-link">cubicles</a></li>
+                        <li class="item"><a href="#" class="item-link">cubicles</a></li>
+                        <li class="item"><a href="#" class="item-link">cubicles</a></li>
+                        <li class="item"><a href="#" class="item-link">cubicles</a></li>
+                        <li class="item"><a href="#" class="item-link">cubicles</a></li>
+                        <li class="item"><a href="#" class="item-link">cubicles</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- USP bar -->
+        <div id="usp-bar">
+            <div class="usp-wrapper">
+                <div class="usp">
+                    <div class="usp-icon"></div>
+                    <div class="usp-text">Free delivery over £50</div>
+                </div>
+                <div class="usp">
+                    <div class="usp-icon"></div>
+                    <div class="usp-text">Knowledgable staff</div>
+                </div>
+                <div class="usp">
+                    <div class="usp-icon"></div>
+                    <div class="usp-text">In house design team</div>
+                </div>
+            </div>
+        </div>
+        <div id="slideout-menu">
+            <div class="menu-header">
+
+            </div>
+            <div class="menu-items">
+                <ul class="items">
+                    <li class="item"><a href="#" class="item-link">cubicles</a></li>
+                    <li class="item"><a href="#" class="item-link">cubicles</a></li>
+                    <li class="item"><a href="#" class="item-link">cubicles</a></li>
+                    <li class="item"><a href="#" class="item-link">cubicles</a></li>
+                    <li class="item"><a href="#" class="item-link">cubicles</a></li>
+                    <li class="item"><a href="#" class="item-link">cubicles</a></li>
+                    <li class="item"><a href="#" class="item-link">cubicles</a></li>
+                    <li class="item"><a href="#" class="item-link">cubicles</a></li>
+                    <li class="item"><a href="#" class="item-link">cubicles</a></li>
+                    <li class="item"><a href="#" class="item-link">cubicles</a></li>
+                </ul>
+            </div>
+            <div class="menu-footer">
+
+            </div>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

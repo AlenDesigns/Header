@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+}
+/*
+LARGER MOBILE DEVICES
+~481px+
+*/
+/*
+TABLET & SMALLER LAPTOPS
+~768px+
+*/
+/*
+DESKTOP
+~1030px+
+*/
+/*
+LARGE VIEWING SIZE
+~1240px+
+*/
+#header #notification-bar {
+  height: 8px;
+  background: #53bbed;
+}
+#header #notification-bar .menu-items,
+#header #notification-bar .faq-widget-wrapper {
+  display: none;
+}
+#header #site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+@media only screen and (min-width: 1300px) {
+  #header #site-header {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+#header #site-header .toggle-wrapper {
+  text-align: left;
+}
+#header #site-header .toggle-wrapper .toggle {
+  width: 25px;
+}
+#header #site-header .logo-wrapper {
+  padding: 10px 0;
+  order: 2;
+  flex: 2;
+  text-align: center;
+}
+#header #site-header .logo-wrapper .logo {
+  width: 150px;
+}
+#header #site-header .search-wrapper {
+  order: 4;
+  width: 100%;
+}
+#header #site-header .search-wrapper .search-block {
+  padding: 0 15px 15px 15px;
+  display: flex;
+}
+#header #site-header .search-wrapper .search-block .search-text {
+  border: 1px solid #333333;
+  height: auto;
+  padding: 10px 12px;
+  flex-grow: 1;
+  margin-right: 12px;
+}
+#header #site-header .search-wrapper .search-block .search-btn {
+  padding: 10px 15px;
+  border: 1px solid #333;
+  background: none;
+}
+#header #site-header .links-wrapper {
+  order: 3;
+  text-align: right;
+}
+#header #site-header .links-wrapper .cart-icon {
+  width: 25px;
+}
+#header #site-header .links-wrapper .user-icon,
+#header #site-header .links-wrapper .telephone {
+  display: none;
+}
+#header #site-header .sections-wrapper {
+  display: none;
+}
+#header #site-header .toggle-wrapper,
+#header #site-header .links-wrapper {
+  flex: 1;
+  padding: 0 15px;
+}
+#header #usp-bar .usp-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background: #53bbed;
+}
+#header #usp-bar .usp-wrapper .usp {
+  flex: 1;
+}
+#header #usp-bar .usp-wrapper .usp:first-of-type {
+  display: none;
+}
+#header #slideout-menu {
+  display: none;
+  position: fixed;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #333;
+  padding: 30px 15px;
+}
+#header #slideout-menu .menu-items .items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#header #slideout-menu .menu-items .items .item .item-link {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px 0;
+  display: block;
+  border-bottom: 1px solid white;
+}
