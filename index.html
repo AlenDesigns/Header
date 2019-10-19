@@ -21,7 +21,7 @@
                 </div>
                 <div class="faq-widget-wrapper">
                     <div class="faq-widget">
-                        <span class="widget-text">Ask us for full quote</span>
+                        <span class="widget-text">Ask us for a <br/>full quote</span>
                     </div>
                 </div>
             </div>
@@ -46,8 +46,63 @@
             </div>
             <div class="search-wrapper">
                 <div class="search-block">
-                    <input type="text" class="search-text" />
+                    <input type="text" class="search-text" id="search-textbox" placeholder="Search the store..." />
                     <button class="search-btn">Search</button>
+                </div>
+                <div id="search-dropdown">
+                    <div class="items">
+                        <!-- Single search item -->
+                        <div class="item">
+                            <div class="thumbnail-wrapper">
+                                <img src="assets/product.png" alt="Search item result" class="thumbnail" />
+                            </div>
+                            <div class="content-wrapper">
+                                <a href="#" class="item-name">
+                                    Bristan Vandal Resistant Shower Head 
+                                </a>
+                                <p class="item-description">
+                                    This chrome-plated, Bristan vandal resistant shower head is suitable for all commercial environments
+                                </p>
+                                <span class="item-price">
+                                    £25.00
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Duplicated 2 dummy items -->
+                        <div class="item">
+                                <div class="thumbnail-wrapper">
+                                    <img src="assets/product.png" alt="Search item result" class="thumbnail" />
+                                </div>
+                                <div class="content-wrapper">
+                                    <a href="#" class="item-name">
+                                        Bristan Vandal Resistant Shower Head 
+                                    </a>
+                                    <p class="item-description">
+                                        This chrome-plated, Bristan vandal resistant shower head is suitable for all commercial environments
+                                    </p>
+                                    <span class="item-price">
+                                        £25.00
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="thumbnail-wrapper">
+                                    <img src="assets/product.png" alt="Search item result" class="thumbnail" />
+                                </div>
+                                <div class="content-wrapper">
+                                    <a href="#" class="item-name">
+                                        Bristan Vandal Resistant Shower Head 
+                                    </a>
+                                    <p class="item-description">
+                                        This chrome-plated, Bristan vandal resistant shower head is suitable for all commercial environments
+                                    </p>
+                                    <span class="item-price">
+                                        £25.00
+                                    </span>
+                                </div>
+                            </div>
+                    </div>
+                    <button class="view-results-btn">View all results</button>
                 </div>
             </div>
             <div class="links-wrapper">
@@ -56,25 +111,33 @@
                     <image id="account_icon" data-name="account icon" width="27" height="27" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAACTklEQVRIibWVPWhTURiGnybRQa21UAuNFILiWCgGB3VSWsShiktB8GdycBJEpINRkQYk6FJRoR06tOCg+FdwqR21g4JV7CoFcVOkgtSfiPLhe/Hce25OktI8y/353u99c84956StWCzSIEeA08BeoBP4ArwAJoDHjVg0ErYZmAaGvMp/ZoDjwFev4pDx3sTJAQ8V9AOoALuArbpW9H5Iupzn4BAsAmeAA8A3YBCYd2qfgNfAI2BWOtPf9FxEvZGd0/VCIshlXnVXn0oobCdQAL4Dk141zqR0BfWlEgrr0XUJWPGqcVakc/s8QmG/de3wKul0JPo8QmHvgKp+aZ9XjdMnXVV9qYTClrV/jBtA1lP8I6s60i97ChEKM0rATy37e0BXot6l94PSlTwHh3r7bBE4CUwBR4GDwDPgA9ALDAAbgF/SLXoOTYQZ94EdQFnGhz0FXJEuSGgaNwEjGkXZq8YpSzeivlRqHcR21t0BtunZTvgnOi3e6/jaCGwH9mi0ndJ+1LE1kzRNhrUBF4Grel7SFN3VAqjFeuCYtAVpLgGjwJ+oJ5vP593+isKM2/oPexXaqMLqb4BxjXA3sF/feDYt7ARwXfdngcvapM1g+qea9kPAPk37W5wFYrv/lu6vAWNNhiQZkw/y7XHD7Bu1Awv1NmYTlOTXHq0BC+sGTsnj/CqmrhZV+SH/bgsbBtZp98/VaFwtc/I1/+GMjhzjwRoHRUS+AxbWr4fnnmxtiHz7czpQjc/AlhaEma/Ra2HRinzZopFFZCzIlmfrgYW/A7B0GZs9RvUAAAAASUVORK5CYII="/>
                 </svg>                  
                 <!-- Cart icon -->
-                <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="25" viewBox="0 0 28 25">
-                    <image id="basket_icon" data-name="basket icon" width="28" height="25" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAZCAYAAAAiwE4nAAACHklEQVRIib3WO2hVQRAG4C9BfFRJ5aNQbNTCoNGoEZQEsVIbEUQFEUQLsbET7SNRrC0VKwXxWVnYxM6b4DtYiI0iRDFYCGrAJ5vM0ZOzNyQxN/5wOOzsv/Pv7M7OblNHR4cpYAsu4BCeVeiHcRzb8WkyV82ZJcdS3MRa7Kz0zsFRbMCVqfibjLAAt7EQ13Cu0v8de/AWu3Am8zBNwYtYjyexdL8yBu+xGyM4hf0ZY4qCJ3EAH8Lhl4zxFw9xJFqXYpJ1MZHgDvTiG/bidcbIkfbwfGzDLSzKGBMIrsLV6DuB+xljYpzGXSzDdcytMlOWrcaKku0sWvAUQ7Gc00FKrm3YGjlwozT2ZTqHXzF/mk7/FSMpwndYHjMbmiWhxdiXMjoJ1kIwrf3ljNoYHAzB/pQYA+Fy0yyJJWyO/0ASfBCNjRmtcSh815LgY/xAO+bVkehBX/QX6IuvQHu0e7LRY0cj9f9MBaI5KshgHJF1GZ02dKO1ZOuOr0BrtNuy0WNFP4m+wOfi4NdmcVmL3BjVKASLxOnM6DNHZ1njf0bYXxYcXV+srOzVTNESPtPV9VwkisjSdMV0RZT3SkJF9MMl253KRIbDVqvYU3RNeBSX9R/BIuSuIJUFe+tEWS3og3VsSlvUXxjK11NhbGTFGbd/VcFahdRIweIUjFvSN/E+SZU93YX13i/TQdq7JfiIV/UEE9LT4BjWNDDK9OobA34DMf1m/0XARZcAAAAASUVORK5CYII="/>
-                </svg>                  
+                  
+                <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 770 728" width="22" height="20">
+                    <defs>
+                        <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                            <path d="M0 0L770 0L770 728L0 728Z" />
+                        </clipPath>
+                    </defs>
+                    <g id="Page 1" clip-path="url(#cp1)">
+                        <path fill="#000" id="Path 1" fill-rule="evenodd" class="shp0" d="M769.06 256.23L679.49 707.07C677.04 719.42 666.08 728.24 653.49 728L116.59 728C104 728.24 93.04 719.42 90.59 707.07L0.5 256.1C0.13 254.26 -0.03 252.39 0 250.52C0.28 236.17 12.14 224.75 26.5 225.03L109.18 225.03L281.82 0.13L323.03 31.85L174.7 225.03L586.15 225.03L437.82 31.85L479.03 0.13L652.06 225.03L743.06 225.03C750.86 225.01 758.26 228.49 763.21 234.52C768.35 240.49 770.5 248.48 769.06 256.23ZM711.34 277.03L58.48 277.03L137.78 675.87L631.78 675.87L711.34 277.03ZM358.78 387.14L410.78 387.14L410.78 572.13L358.78 572.13L358.78 387.14ZM488.78 387.14L540.78 387.14L540.78 572.13L488.78 572.13L488.78 387.14ZM228.78 387.14L280.78 387.14L280.78 572.13L228.78 572.13L228.78 387.14Z" />
+                    </g>
+                </svg>              
                 <!-- Phone number -->
                 <span class="telephone">01202 650900</span>
             </div>
             <div class="sections-wrapper">
                 <div class="menu-items">
                     <ul class="items">
-                        <li class="item"><a href="#" class="item-link">cubicles</a></li>
-                        <li class="item"><a href="#" class="item-link">cubicles</a></li>
-                        <li class="item"><a href="#" class="item-link">cubicles</a></li>
-                        <li class="item"><a href="#" class="item-link">cubicles</a></li>
-                        <li class="item"><a href="#" class="item-link">cubicles</a></li>
-                        <li class="item"><a href="#" class="item-link">cubicles</a></li>
-                        <li class="item"><a href="#" class="item-link">cubicles</a></li>
-                        <li class="item"><a href="#" class="item-link">cubicles</a></li>
-                        <li class="item"><a href="#" class="item-link">cubicles</a></li>
-                        <li class="item"><a href="#" class="item-link">cubicles</a></li>
+                        <li class="item"><a href="#" class="item-link">Cubicles</a></li>
+                        <li class="item"><a href="#" class="item-link">Sanitaryware</a></li>
+                        <li class="item"><a href="#" class="item-link">Taps</a></li>
+                        <li class="item"><a href="#" class="item-link">Dispensers</a></li>
+                        <li class="item"><a href="#" class="item-link">Accessories</a></li>
+                        <li class="item"><a href="#" class="item-link">Electricals</a></li>
+                        <li class="item"><a href="#" class="item-link">Showers</a></li>
+                        <li class="item"><a href="#" class="item-link">Changing Room</a></li>
+                        <li class="item"><a href="#" class="item-link">Disabled</a></li>
+                        <li class="item"><a href="#" class="item-link">Help & Advice</a></li>
                     </ul>
                 </div>
             </div>
@@ -83,15 +146,49 @@
         <div id="usp-bar">
             <div class="usp-wrapper">
                 <div class="usp">
-                    <div class="usp-icon"></div>
+                    <div class="usp-icon">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 190">
+                            <defs>
+                                <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                                    <path d="M0 0L310 0L310 190L0 190Z" />
+                                </clipPath>
+                            </defs>
+                            <g id="Page 1" clip-path="url(#cp1)">
+                                <path id="Path 1" fill-rule="evenodd" class="shp0" d="M307 153C307 160.72 300.72 167 293 167L273.82 167C270.37 178.55 259.66 187 247 187C234.35 187 223.64 178.55 220.18 167L97.82 167C94.37 178.55 83.66 187 71 187C58.34 187 47.64 178.55 44.18 167L17 167C9.28 167 3 160.72 3 153C3 145.97 8.24 140.19 15 139.21L15 7C15 4.79 16.79 3 19 3L179 3C181.21 3 183 4.79 183 7L183 34.99L219.01 34.99C220.31 34.99 221.52 35.62 222.27 36.67L257.99 87L259 87C278.84 87 294.98 103.64 294.98 124.08L294.98 139.2C301.76 140.18 307 145.96 307 153ZM267 159C267 147.97 258.03 139 247 139C235.97 139 227 147.97 227 159C227 170.03 235.97 179 247 179C258.03 179 267 170.03 267 159ZM219 159L219 159C219 154.7 220 150.64 221.74 147L96.26 147C98 150.64 99 154.7 99 159L219 159ZM91 159C91 147.97 82.03 139 71 139C59.97 139 51 147.97 51 159C51 170.03 59.97 179 71 179C82.03 179 91 170.03 91 159ZM43 159L43 159C43 154.7 44 150.64 45.74 147L17 147C13.69 147 11 149.7 11 153C11 156.31 13.69 159 17 159L43 159ZM23 139L51.44 139C56.49 134.06 63.39 131 71 131C78.61 131 85.51 134.06 90.56 139L175 139L174.98 111C174.96 86.99 174.94 62.99 175 38.98L175 11L23 11L23 139ZM183 139L227.44 139C232.49 134.06 239.4 131 247 131C254.61 131 261.51 134.06 266.56 139L286.98 139L286.98 124.08C286.98 108.04 274.43 95 259 95L199 95C196.79 95 195 93.22 195 91L195 59.25C195 57.04 196.79 55.25 199 55.25C201.21 55.25 203 57.04 203 59.25L203 87L248.18 87L216.94 42.99L183 42.99L183 139ZM299 153C299 149.7 296.31 147 293 147L272.26 147C274 150.64 275 154.7 275 159L275 159L293 159C296.31 159 299 156.31 299 153Z" />
+                                <path id="Path 2" class="shp1" d="M71 147C64.38 147 59 152.38 59 159C59 165.62 64.38 171 71 171C77.62 171 83 165.62 83 159C83 152.38 77.62 147 71 147ZM247 147C240.39 147 235 152.38 235 159C235 165.62 240.39 171 247 171C253.62 171 259 165.62 259 159C259 152.38 253.62 147 247 147Z" />
+                            </g>
+                        </svg>
+                    </div>
                     <div class="usp-text">Free delivery over £50</div>
                 </div>
                 <div class="usp">
-                    <div class="usp-icon"></div>
+                    <div class="usp-icon">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 365 311">
+                            <defs>
+                                <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                                    <path d="M0 0L365 0L365 311L0 311Z" />
+                                </clipPath>
+                            </defs>
+                            <g id="Page 1" clip-path="url(#cp1)">
+                                <path id="Path 1" fill-rule="evenodd" class="shp0" d="M347.52 104.37C337.33 129.83 348.27 157.8 348.41 158.12C350.58 163.47 349.27 169.62 345.11 173.58L204.84 307.13C202.18 309.67 198.69 311 195.18 311C195.01 311 194.86 310.9 194.69 310.9C194.52 310.9 194.36 311 194.19 311C191.41 311 188.96 309.97 186.77 308.57L22.11 233.88C19.88 232.9 17.96 231.32 16.54 229.35C-12.81 188.73 5.68 145.23 6.48 143.4C6.56 143.23 6.71 143.13 6.79 142.97C7.44 141.62 8.29 140.37 9.36 139.3C9.53 139.12 9.68 138.92 9.86 138.73C9.93 138.67 9.98 138.57 10.06 138.5L162.83 3.98C166.71 0.55 172.19 -0.43 177.03 1.38L355.76 68.63C360.24 70.33 363.54 74.2 364.56 78.92C365.51 83.63 363.99 88.52 360.54 91.85L347.52 104.37ZM37.28 209.98L180.18 274.8L180.18 241.45L28.68 169.03C27.23 179.76 27.69 194.97 37.28 209.98ZM44.49 145.52L191.48 215.78L325.11 87.07L175.04 30.58L44.49 145.52ZM315.38 135.38L208.21 238.58L208.21 265.25L319.39 159.38C317.76 153.45 315.99 145.02 315.38 135.38Z" />
+                            </g>
+                        </svg>
+                    </div>
                     <div class="usp-text">Knowledgable staff</div>
                 </div>
                 <div class="usp">
-                    <div class="usp-icon"></div>
+                    <div class="usp-icon">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 344 344">
+                            <defs>
+                                <clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+                                    <path d="M0 0L344 0L344 344L0 344Z" />
+                                </clipPath>
+                            </defs>
+                            <g id="Page 1" clip-path="url(#cp1)">
+                                <path id="Path 1" fill-rule="evenodd" class="shp0" d="M218.13 322.28L161.57 265.68L86.25 341L2.81 257.56L78.13 182.24L16.49 120.44C16.49 120.44 -25.47 78.6 24.49 28.64L28.49 24.64C78.45 -25.32 120.29 16.52 120.29 16.52L182.05 78.32L257.36 3L340.81 86.44L265.49 161.76L322.21 218.48L343.81 344L218.13 322.28ZM216.13 288L216.85 260.24L71.81 115.32L57.61 129.68C83.81 156 130.69 202.48 216.13 288ZM23.57 86.2C25.21 94 23.21 94.2 46.41 118.2L118.01 46.6L104.25 32.84C89.49 19.4 67.77 17.76 44.69 40.84C32.57 52.96 19.61 67.6 23.57 86.2ZM193.36 89.64L261 157.24L254.17 150.4L318.17 86.4L257.36 25.6L223.41 59.56L241.61 77.72L230.29 89.04L212.13 70.88L193.36 89.64ZM315.81 316L311.36 291.44L291.36 311.44L315.81 316ZM83.25 104L227.81 248.72L247.21 247L249.81 229.44L103.81 83.44L83.25 104ZM288.85 217.52L129.29 57.84L115.13 72L260.13 217.16L288.85 217.52ZM231.81 301.4L272.09 308.24L308.09 272.24L301.45 233.64L265.45 233.2L262.13 255.6C261.59 259.26 258.61 262.07 254.93 262.4L232.73 264.36L231.81 301.4ZM150.29 254.32L89.49 193.52L70.73 212.28L88.89 230.44L77.57 241.76L59.41 223.6L25.45 257.56L86.25 318.36L150.29 254.32ZM83.15 270.31C83.16 275.65 78.83 279.99 73.49 280C68.15 279.99 63.82 275.67 63.82 270.33C63.81 264.99 68.14 260.65 73.49 260.64C78.82 260.65 83.15 264.97 83.15 270.31Z" />
+                            </g>
+                        </svg>
+                    </div>
                     <div class="usp-text">In house design team</div>
                 </div>
             </div>
@@ -119,11 +216,24 @@
             </div>
         </div>
     </header>
-    <main>
-
+    <main id="main">
+        <div id="hero-wrapper">
+            <div class="content">
+                <h1 class="title">Full Service Washrooms</h1>
+                <p class="subtitle">
+                    Enquire now for a full quote 
+                    <br /> 
+                    on all elements of your washroom
+                </p>
+            </div>
+            <div class="image"></div>
+        </div>
     </main>
     <footer>
 
     </footer>
+
+    <!-- Require JS -->
+    <script data-main="js/app" src="js/require.js"></script>
 </body>
 </html>
